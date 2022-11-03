@@ -8,12 +8,14 @@
 /* Generics */
 body {
   font-family: sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 /* Utils */
 
 .container {
   max-width: 1200px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -33,55 +35,66 @@ body {
   background-color: white;
 }
 
-.bg-gray {
+.bg-lightgray {
   background-color: lightgray;
 }
-
-header {
-  background-color: lightblue;
+.bg-gray{
+  background-color: #23272a;
+}
+.header-top {
+  background-color: rgb(49,97,224);
 }
 
 /* # Navbar */
 
 .navbar {
   height: 80px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar > * {
   padding: 10px;
-  flex-basis: 20%;
-  background-color: goldenrod;
+ /* flex-basis: 20%; */
+  /* background-color: goldenrod;*/
 }
 
 .navbar-menu {
+  flex-basis: 20%;
   flex-grow: 1;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-.navbar-actions {
-  text-align: right;
+.button{
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
 }
-
 /* # Jumbotron */
 
 .jumbotron {
-  padding: 50px;
+  padding-top: 40px;
   height: 500px;
-  background-color: darkblue;
-
+  background-image: url(../img/jumbo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
 
 .jumbotron .content {
   width: 50%;
-  /* height: 100%; */
+  height: 300px;
   /* margin: 0 auto; */
-  background-color: violet;
+  /*background-color: violet;*/
+  text-align: center;
+}
+
+
+.pd{
+  padding: 30px;
 }
 
 /* # Main & sections */

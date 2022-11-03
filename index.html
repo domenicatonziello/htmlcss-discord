@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord Blocks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="debug">
     <!-- Header -->
-    <header>
+    <header class="header-top">
       <nav class="navbar container border">
-        <div class="navbar-logo border"> logo</div>
-        <div class="navbar-menu border">link link link link link</div>
-        <div class="navbar-actions border">Click me </div>
+        <div class="navbar-logo border"> <img src="img/logo.svg" alt="Logo"></div>
+        <div class="navbar-menu border">
+          <a class="navbar-list"> Scarica </a>
+          <a class="navbar-list"> Perché Discord </a>
+          <a class="navbar-list"> Nitro </a>
+          <a class="navbar-list"> Sicurezza </a>
+          <a class="navbar-list"> Assistenza </a>
+        </div>
+        <button class="navbar-actions button bg-white border"> Accedi </button>
       </nav>
-
+    </header>
+    <header class="header-bottom">
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <div class="content border"></div>
+        <div class="content border">
+          <h1 class="pd"> Il tuo posto per parlare </h1>
+          <p class="pd"> Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso. </p>
+          <button class="button bg-white"> <i class="fa-solid fa-arrow-down-long fa-xs"></i> Scarica per Mac </button>
+          <a class="button bg-gray"> Apri discord nel tuo browser</a>
+          
+        </div>
       </div>
-    </header>
-
+    </header>  
+      
     <!-- Main  -->
 
     <main>
@@ -31,7 +45,7 @@
           <div class="small-col border"></div>
         </div>
       </section>
-      <section class="bg-gray border">
+      <section class="bg-lightgray border">
         <div class="container flex row-reverse">
           <div class="large-col border"></div>
           <div class="small-col border"></div>
@@ -43,7 +57,7 @@
           <div class="small-col border"></div>
         </div>
       </section>
-      <section class="bg-gray">
+      <section class="bg-lightgray">
         <div class="container flex border">
           <div class="full-col border"></div>
         </div>
@@ -51,7 +65,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-gray">
       <div class="container">
         <div class="footer-top">
           <div class="footer-left"></div>
