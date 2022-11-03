@@ -30,6 +30,7 @@ body {
 .debug .border {
   border: 2px dashed black;
 }
+
 .bg-white {
   background-color: white;
 }
@@ -39,6 +40,10 @@ body {
 }
 .bg-gray{
   background-color: #23272a;
+}
+.bg-blue{
+  background-color: rgb(142,161,225);
+  color: white;
 }
 .header-top {
   background-color: rgb(49,97,224);
@@ -102,7 +107,7 @@ h1{
 /* # Main & sections */
 section {
   padding: 50px;
-  height: 600px;
+  min-height: 600px;
 }
 
 section > .container {
@@ -121,8 +126,8 @@ section > .container {
   /* background-color: dodgerblue; */
 }
 
-.flex > .full-col {
-  flex-basis: 100%;
+.container > .full-col {
+  width: 100%;
   /* background-color: darkgreen;*/
   text-align: center;
   color: black;
@@ -132,7 +137,10 @@ section > .container {
   width: 100%;
 }
 .img-full{
-  width: 70%;
+  width: 100%;
+}
+.stars{
+  height: 35px;
 }
 /* # Footer */
 
