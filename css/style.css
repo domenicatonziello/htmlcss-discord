@@ -30,7 +30,6 @@ body {
 .debug .border {
   border: 2px dashed black;
 }
-
 .bg-white {
   background-color: white;
 }
@@ -43,6 +42,9 @@ body {
 }
 .header-top {
   background-color: rgb(49,97,224);
+}
+h1{
+  font-size: 30px;
 }
 
 /* # Navbar */
@@ -71,6 +73,7 @@ body {
   border-radius: 20px;
   padding: 10px;
   margin: 20px;
+  border: none;
 }
 /* # Jumbotron */
 
@@ -92,9 +95,8 @@ body {
   text-align: center;
 }
 
-
 .pd{
-  padding: 30px;
+  padding: 20px;
 }
 
 /* # Main & sections */
@@ -108,20 +110,30 @@ section > .container {
 }
 
 .flex > .small-col {
-  flex-basis: 40%;
-  background-color: pink;
+  flex-basis: 30%;
+  /* background-color: pink; */
+  text-align: left;
+  color: black;
 }
 
 .flex > .large-col {
-  flex-basis: 60%;
-  background-color: dodgerblue;
+  flex-basis: 70%;
+  /* background-color: dodgerblue; */
 }
 
 .flex > .full-col {
   flex-basis: 100%;
-  background-color: darkgreen;
+  /* background-color: darkgreen;*/
+  text-align: center;
+  color: black;
 }
 
+.flex .img{
+  width: 100%;
+}
+.img-full{
+  width: 70%;
+}
 /* # Footer */
 
 footer {
