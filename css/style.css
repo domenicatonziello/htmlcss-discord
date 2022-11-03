@@ -151,22 +151,21 @@ footer {
 }
 
 .footer-top {
-  height: 600px;
+  min-height: 300px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid purple;
-
+  /* margin-bottom: 30px;*/
+  border-bottom: 1px solid blueviolet;
   display: flex;
 }
 
 .footer-top .footer-left {
   flex-basis: 30%;
-  background-color: pink;
+  /* background-color: pink;*/
 }
 
 .footer-top .footer-right {
   flex-basis: 70%;
-  background-color: #20b2aa;
+  /* background-color: #20b2aa; */
 }
 
 .footer-nav {
@@ -184,10 +183,28 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: aquamarine;
+  /* background-color: aquamarine;*/
 }
 
 .footer-bottom > * {
   padding: 5px 10px;
-  background-color: yellow;
+  /* background-color: yellow; */
+}
+.title{
+  color: rgb(82,99,149);
+}
+.bandiera{
+  height: 15px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.language{
+  margin: 10px 0;
+}
+.fa-brands{
+  padding-right: 10px;   
+}
+li{
+  list-style-type: none;
+  margin: 10px 0;
 }
