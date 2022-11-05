@@ -8,14 +8,20 @@
 /* Generics */
 body {
   font-family: sans-serif;
-  color: rgb(255, 255, 255);
 }
+p{
+  font-size: 20px;
+}
+h1,h2{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
 
 /* Utils */
 
 .container {
-  max-width: 1200px;
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -33,23 +39,23 @@ body {
 
 .bg-white {
   background-color: white;
+  color: black;
 }
 
 .bg-lightgray {
-  background-color: lightgray;
+  background-color: rgb(232,232,232);
 }
 .bg-gray{
   background-color: #23272a;
+  color: white;
 }
 .bg-blue{
   background-color: rgb(142,161,225);
   color: white;
 }
-.header-top {
+header{
   background-color: rgb(49,97,224);
-}
-h1{
-  font-size: 30px;
+  color: rgb(255, 255, 255);
 }
 
 /* # Navbar */
@@ -61,40 +67,65 @@ h1{
   justify-content: space-between;
 }
 .navbar > * {
-  padding: 10px;
+  padding: 10px 0;
  /* flex-basis: 20%; */
   /* background-color: goldenrod;*/
+}
+.navbar-logo{
+  display: block;
 }
 
 .navbar-menu {
   flex-basis: 20%;
   flex-grow: 1;
-  text-align: center;
+  /* text-align: center;*/
   display: flex;
   justify-content: space-around;
+}
+.navbar-menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.navbar-menu li{
+  margin: 0 20px;
+}
+.navbar-menu a{
+  text-decoration: none;
+  color: white;
 }
 
 .button{
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 20px;
   border: none;
+  display: inline-block;
+}
+a.button{
+  text-decoration: none;
 }
 /* # Jumbotron */
 
 .jumbotron {
-  padding-top: 40px;
+  padding: 50px 0;
   height: 500px;
   background-image: url(../img/jumbo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.jumbotron p{
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 
 .jumbotron .content {
   width: 50%;
-  height: 300px;
   /* margin: 0 auto; */
   /*background-color: violet;*/
   text-align: center;
@@ -108,6 +139,9 @@ h1{
 section {
   padding: 50px;
   min-height: 600px;
+}
+section p{
+  line-height: 150%;
 }
 
 section > .container {
@@ -134,20 +168,21 @@ section > .container {
 }
 
 .flex .img{
-  width: 100%;
+  max-width: 100%;
 }
 .img-full{
   width: 100%;
 }
 .stars{
   height: 35px;
+  width: 100%;
 }
 /* # Footer */
 
 footer {
   padding: 50px;
   background-color: #23272a;
-  /* color: white; */
+  color: white;
 }
 
 .footer-top {
@@ -207,4 +242,13 @@ footer {
 li{
   list-style-type: none;
   margin: 10px 0;
+}
+
+/* WAVE */
+.wave{
+  filter: opacity(0.09);
+  display: block;
+}
+.wave.upside-down{
+  transform: rotate(0.5turn);
 }
